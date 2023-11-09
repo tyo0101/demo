@@ -1,15 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css' // Bootstrap的CSS
+import { BootstrapVue3, BVToastPlugin } from 'bootstrap-vue-3' // 引入BootstrapVue3
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css' // BootstrapVue的CSS
 
-Vue.use(BootstrapVue)
+const app = createApp(App)
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+app.use(store)
+app.use(router)
+app.use(BootstrapVue3)
+app.use(BVToastPlugin) // 如果您需要Toast插件，其他插件也类似使用
 
-
-createApp(App).use(store).use(router).mount('#app')
+app.mount('#app')
