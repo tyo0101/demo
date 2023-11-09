@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-padding">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-padding">
       <a class="navbar-brand" href="#">My Website</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,20 +23,20 @@
     </nav>
 
   <!-- slide -->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-  </template>
+</template>
   
   <script>  
   export default {
@@ -45,10 +45,9 @@
   </script>
   
   <style>
-    @import 'bootstrap/dist/css/bootstrap.css';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 .navbar-padding {
-  padding: 10px; /* 在这里添加内边距，可以根据需要进行调整 */
+  padding: 10px;
 }
 
 .navbar-brand {
