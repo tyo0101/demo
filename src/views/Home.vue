@@ -23,7 +23,19 @@
     </nav>
 
   <!-- slide -->
-
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../pic/mac.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
   </template>
   
   <script>  
@@ -33,6 +45,7 @@
   </script>
   
   <style>
+    @import 'bootstrap/dist/css/bootstrap.css';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 .navbar-padding {
   padding: 10px; /* 在这里添加内边距，可以根据需要进行调整 */
