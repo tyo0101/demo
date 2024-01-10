@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* reset End */
+
+.carousel-item {
+    max-height: 900px;
+  }
+  
+  .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .carousel-item {
+      height: 500px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-item {
+      height: 300px;
+    }
+  }
+  h2{
+    position: absolute;
+    top: 30%;
+    color:#fff;
+    font-size:3vw;
+    text-align:center;
+    padding:50px;
+}
+  .parallax {
+    position: relative;
+    background: url("/img/parallax.jpg")center center no-repeat;        
+    min-height: 50vw;
+    background-size:100% 100vw ;
+    margin: 10vw 0;
+  }
+  @media screen  and (min-width: 1024px) {
+    .parallax {
+      background-size: cover;
+      min-height: 30vw;
+      background-attachment: fixed;
+    }
+  }
+  /* #animated-element {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease, transform 1.5s ease;
+  } */
+  .wow.animate__fadeInUp {
+    animation-duration: 1.5s;
+    --animate-offset: 400px;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+#CDrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CDitem{
+  max-width: 300px;
+  max-height:300px;
+  margin:1%;
+}
+.CDitem img{
+  width: 100%;
+  height:100%;
+  object-fit: fill;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+hr{
+  width: 80%;
+  margin: 5% auto;
+}
+#imformation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.portfolio img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+.portfolio_imformation{
+  height: 70%;
+  margin-top: 1%;
+  line-height: 1.5;
+  font-size: 2.5vw;
+  color:#ffffff;
+  background: rgba(191, 203, 206, 0.8);
+  padding: 1%;
+  align-items: center;
+}
+.portfolio_imformation p{
+  margin: 0;
+}
+@media screen  and (min-width: 1200px) {
+  #imformation{
+    position: relative;
+    justify-content: space-between;
+  }
+  .portfolio_imformation{
+    position: absolute;
+    right: 10%;
+    font-size: 1.5vw;
+  }
+}
+h1{
+  font-size: 2.5vw;
+  color: rgba(191, 203, 206);
+  text-align: center;
+}
+.wow.animate__fadeInLeft {
+  animation-duration: 1.5s;
+  --animate-offset: 400px;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.wow.animate__fadeInRight {
+  animation-duration: 1s;
+  --animate-offset: 400px;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+#card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.card{
+  overflow: hidden;
+  padding: 1%;
+  margin: 1%;
+}
+.card img{
+  height: 300px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card img {
+    height: 200px;
+  }
+}
