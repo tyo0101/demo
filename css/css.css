@@ -73,7 +73,7 @@ table {
 }
   .parallax {
     position: relative;
-    background: url("/img/parallax.jpg")center center no-repeat;        
+    background: url("../img/parallax.jpg")center center no-repeat;        
     min-height: 50vw;
     background-size:100% 100vw ;
     margin: 10vw 0;
